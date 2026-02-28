@@ -367,6 +367,37 @@ a:hover {
   border-top: none;
 }
 
+.working-out-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.working-out-row .hobbies-list {
+  flex: 1;
+  margin-top: 0;
+}
+
+.working-out-image {
+  width: 280px;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .working-out-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .working-out-image {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
 .hobbies-list {
   margin-top: 1.5rem;
 }
