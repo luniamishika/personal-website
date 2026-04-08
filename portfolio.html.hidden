@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Mishika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Mishika</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">About</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="fun.html" class="nav-link">Fun</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-section">
+    <div class="container">
+      <div class="hero-section">
+        <h2 class="about-heading">portfolio</h2>
+
+        <div class="portfolio-section">
+          <h3 class="portfolio-category">Health and Tech</h3>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <p class="portfolio-title">Bridging the gap between computational research and healthcare applications</p>
+              <p class="portfolio-description">Developing technical solutions to advance medical research and improve
+                health outcomes.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="portfolio-section">
+          <h3 class="portfolio-category">Women and Health</h3>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <p class="portfolio-title">Writing about women's health, wellness, and the systems that impact our bodies
+                and lives</p>
+              <p class="portfolio-description">Advocating for better understanding and access to healthcare.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="portfolio-section">
+          <h3 class="portfolio-category">Tech, Society and Creativity</h3>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <p class="portfolio-title">Exploring how technology shapes our social structures, relationships, and
+                understanding of the world</p>
+              <p class="portfolio-description">Examining the intersection of algorithms, ethics, and human experience.
+              </p>
+            </li>
+            <li class="portfolio-item">
+              <p class="portfolio-title">Reflections on the creative process, artistic expression, and how we make
+                meaning through various forms of creation</p>
+              <p class="portfolio-description">From pottery to code to writing.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 Mishika Lunia</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
