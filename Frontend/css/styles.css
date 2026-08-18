@@ -1,9 +1,9 @@
 /* Technor Font */
 @font-face {
   font-family: 'Technor-Variable';
-  src: url('/Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff2') format('woff2'),
-    url('/Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff') format('woff'),
-    url('/Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.ttf') format('truetype');
+  src:     url('../../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff2') format('woff2'),
+    url('../../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff') format('woff'),
+    url('../../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.ttf') format('truetype');
   font-weight: 200 900;
   font-display: swap;
   font-style: normal;
