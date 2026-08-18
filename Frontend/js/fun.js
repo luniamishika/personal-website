@@ -1,9 +1,9 @@
 (function () {
   const potteryGallery = document.getElementById('potteryGallery');
   const potteryImages = [
-    '/fun/pottery/WhatsApp Image 2026-01-12 at 12.43.28 AM (1).jpeg',
-    '/fun/pottery/WhatsApp Image 2026-01-18 at 8.56.13 PM.jpeg',
-    '/fun/pottery/WhatsApp Image 2026-04-08 at 10.34.51 PM.jpeg'
+    '/fun/pottery/IMG_7329.png',
+    '/fun/pottery/IMG_7277.png',
+    '/fun/pottery/IMG_7140.png'
   ];
 
   potteryImages.forEach(imgSrc => {
@@ -42,5 +42,37 @@
     img.className = 'book-cover';
     img.loading = 'lazy';
     readingList.appendChild(img);
+  });
+
+  const activityGallery = document.getElementById('activityGallery');
+  const activityImages = [
+    '/fun/working out/trek-valley.png',
+    '/fun/working out/langur.png',
+    '/fun/working out/IMG_5513.png',
+    '/fun/working out/WhatsApp Image 2026-03-01 at 2.31.14 AM.jpeg'
+  ];
+
+  activityImages.forEach((imgSrc, index) => {
+    const img = document.createElement('img');
+    img.src = encodeURI(imgSrc);
+    img.alt = 'Being active';
+    img.loading = 'lazy';
+
+    if (index === 0) {
+      img.classList.add('activity-image--contrast');
+    }
+
+    if (index === activityImages.length - 1) {
+      img.classList.add('activity-image--vivid');
+    }
+
+    if (index === 1) {
+      const crop = document.createElement('div');
+      crop.className = 'activity-crop';
+      crop.appendChild(img);
+      activityGallery.appendChild(crop);
+    } else {
+      activityGallery.appendChild(img);
+    }
   });
 })();
