@@ -46,7 +46,6 @@
   const activityImages = [
     '../fun/working out/trek-valley.png',
     '../fun/working out/langur.png',
-    '../fun/working out/IMG_5513.png',
     '../fun/working out/WhatsApp Image 2026-03-01 at 2.31.14 AM.jpeg'
   ];
 
