@@ -1,7 +1,7 @@
 (function () {
   const logosSection = document.getElementById('companyLogos');
   const companyLogos = [
-    { src: '../../logos/iit-rourkee-logo-16x9-3328220051.png', alt: 'IIT Roorkee' },
+    { src: '../logos/iit-rourkee-logo-16x9-3328220051.png', alt: 'IIT Roorkee' },
     { src: 'https://kcdha.ashoka.edu.in/src/images/news-default.png', alt: 'Koita Centre for Digital Health at Ashoka' }
   ];
 

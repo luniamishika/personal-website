@@ -1,9 +1,9 @@
 /* Technor Font */
 @font-face {
   font-family: 'Technor-Variable';
-  src:     url('../../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff2') format('woff2'),
-    url('../../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff') format('woff'),
-    url('../../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.ttf') format('truetype');
+  src:     url('../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff2') format('woff2'),
+    url('../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.woff') format('woff'),
+    url('../Fonts/Technor_Complete/Fonts/WEB/fonts/Technor-Variable.ttf') format('truetype');
   font-weight: 200 900;
   font-display: swap;
   font-style: normal;
@@ -55,7 +55,7 @@ body {
 
 .brand {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
   text-decoration: none;
 }
@@ -173,8 +173,18 @@ body {
   flex: 1;
 }
 
+.email-highlight {
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  background: #2a2a2a;
+  color: #ddd;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .about-content p {
   font-size: 1rem;
+  font-weight: 300;
   color: #fff;
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -184,16 +194,17 @@ body {
   margin-bottom: 0;
 }
 
-.fun-text {
+.personal-text {
   font-size: 0.9rem;
+  font-weight: 300;
 }
 
-.fun-text--center {
+.personal-text--center {
   margin-top: 1.5rem;
   text-align: center;
 }
 
-.fun-subheading {
+.personal-subheading {
   text-transform: uppercase;
   font-family: 'Technor-Variable', sans-serif;
   font-size: 1.4rem;
@@ -202,7 +213,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-.fun-subheading--underline {
+.personal-subheading--underline {
   font-size: inherit;
   text-decoration: underline;
 }
@@ -595,6 +606,11 @@ a:hover {
   margin-top: 1.5rem;
 }
 
+#potteryGallery {
+  grid-template-columns: minmax(0, 320px);
+  justify-content: center;
+}
+
 .gallery-grid img {
   width: 100%;
   height: auto;
@@ -619,8 +635,8 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Fun area */
-.fun-area {
+/* Personal area */
+.personal-area {
   text-align: center;
   padding: 3rem 2rem;
   margin: 3rem 0;

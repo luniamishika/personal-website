@@ -1,9 +1,7 @@
 (function () {
   const potteryGallery = document.getElementById('potteryGallery');
   const potteryImages = [
-    '../../fun/pottery/IMG_7329.png',
-    '../../fun/pottery/IMG_7277.png',
-    '../../fun/pottery/IMG_7140.png'
+    '../fun/pottery/IMG_7140.png'
   ];
 
   potteryImages.forEach(imgSrc => {
@@ -29,8 +27,8 @@
 
   const readingList = document.getElementById('readingList');
   const bookImages = [
-    '../../fun/books/81PX0uhxQ3L-1542153354.jpg',
-    '../../fun/books/91zImnC+uLL-600845415.jpg'
+    '../fun/books/81PX0uhxQ3L-1542153354.jpg',
+    '../fun/books/91zImnC+uLL-600845415.jpg'
   ];
 
   bookImages.forEach(imgSrc => {
@@ -44,10 +42,10 @@
 
   const activityGallery = document.getElementById('activityGallery');
   const activityImages = [
-    '../../fun/working out/trek-valley.png',
-    '../../fun/working out/langur.png',
-    '../../fun/working out/IMG_5513.png',
-    '../../fun/working out/WhatsApp Image 2026-03-01 at 2.31.14 AM.jpeg'
+    '../fun/working out/trek-valley.png',
+    '../fun/working out/langur.png',
+    '../fun/working out/IMG_5513.png',
+    '../fun/working out/WhatsApp Image 2026-03-01 at 2.31.14 AM.jpeg'
   ];
 
   activityImages.forEach((imgSrc, index) => {
