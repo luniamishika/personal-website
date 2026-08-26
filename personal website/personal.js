@@ -1,7 +1,7 @@
 (function () {
   const potteryGallery = document.getElementById('potteryGallery');
   const potteryImages = [
-    '../fun/pottery/IMG_7140.png'
+    '../fun/pottery/IMG_7175.png'
   ];
 
   potteryImages.forEach(imgSrc => {
@@ -31,14 +31,16 @@
     '../fun/books/91zImnC+uLL-600845415.jpg'
   ];
 
-  bookImages.forEach(imgSrc => {
-    const img = document.createElement('img');
-    img.src = imgSrc;
-    img.alt = 'Book cover';
-    img.className = 'book-cover';
-    img.loading = 'lazy';
-    readingList.appendChild(img);
-  });
+  if (readingList) {
+    bookImages.forEach(imgSrc => {
+      const img = document.createElement('img');
+      img.src = imgSrc;
+      img.alt = 'Book cover';
+      img.className = 'book-cover';
+      img.loading = 'lazy';
+      readingList.appendChild(img);
+    });
+  }
 
   const activityGallery = document.getElementById('activityGallery');
   const activityImages = [
