@@ -29,10 +29,8 @@
 
   const readingList = document.getElementById('readingList');
   const bookImages = [
-    '../../fun/books/butter-21-2482074963.jpg',
     '../../fun/books/81PX0uhxQ3L-1542153354.jpg',
-    '../../fun/books/91zImnC+uLL-600845415.jpg',
-    '../../fun/books/the-stranger-taschenbuch-albert-camus-englisch-4147876500.jpeg'
+    '../../fun/books/91zImnC+uLL-600845415.jpg'
   ];
 
   bookImages.forEach(imgSrc => {

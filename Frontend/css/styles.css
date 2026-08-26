@@ -143,7 +143,34 @@ body {
 }
 
 .about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
   margin-bottom: 3rem;
+}
+
+.about-profile {
+  flex: 0 0 250px;
+  text-align: center;
+}
+
+.profile-name {
+  margin: 1rem 0 0;
+  font-family: 'Technor-Variable', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.about-content .profile-role {
+  margin: 0.4rem 0 0;
+  color: #aaa;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.about-copy {
+  flex: 1;
 }
 
 .about-content p {
@@ -187,6 +214,12 @@ body {
   font-weight: 400;
 }
 
+.work-heading,
+.hobbies-heading {
+  display: block;
+  text-align: center;
+}
+
 .about-image {
   width: 100%;
   max-width: 700px;
@@ -196,22 +229,32 @@ body {
 }
 
 .about-image-left {
-  float: left;
-  width: 250px;
-  height: auto;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
 }
 
 @media (max-width: 768px) {
-  .about-image-left {
-    float: none;
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-profile {
+    flex-basis: auto;
     width: 100%;
     max-width: 300px;
-    margin: 0 auto 1.5rem;
-    display: block;
+  }
+
+  .about-image-left {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-copy {
+    width: 100%;
   }
 }
 
@@ -355,26 +398,34 @@ a:hover {
 
 /* Social links */
 .social-links {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   border-top: 1px solid #333;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .social-link {
   color: #ccc;
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-link svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
 }
 
 .social-link:hover {
   color: #fff;
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 .separator {
@@ -532,7 +583,7 @@ a:hover {
 
 /* Pottery gallery */
 .pottery-gallery {
-  margin-top: 2rem;
+  margin-top: 0.75rem;
   padding-top: 0;
   border-top: none;
 }
@@ -560,8 +611,8 @@ a:hover {
   margin-top: 2rem;
 }
 
-.art-subsection:first-child {
-  margin-top: 0;
+.art-subsection:first-of-type {
+  margin-top: 0.75rem;
 }
 
 .art-subsection h4 {
@@ -773,6 +824,8 @@ a:hover {
 
 .cv-download-button {
   display: flex;
+  flex-direction: row;
+  gap: 0.45rem;
   width: 250px;
   height: 120px;
   border: 1px solid #333;
@@ -782,6 +835,16 @@ a:hover {
   justify-content: center;
   transition: all 0.3s ease;
   flex-shrink: 0;
+}
+
+.cv-download-icon {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .cv-download-button:hover {
