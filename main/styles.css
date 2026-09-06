@@ -214,8 +214,8 @@ body {
 }
 
 .about-content p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
   color: #fff;
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -226,8 +226,9 @@ body {
 }
 
 .personal-text {
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
 }
 
 .personal-text--center {
@@ -260,6 +261,119 @@ body {
 .hobbies-heading {
   display: block;
   text-align: center;
+}
+
+.work-page {
+  max-width: 720px;
+}
+
+.work-section {
+  margin-bottom: 3rem;
+}
+
+.work-section-title {
+  font-family: 'Fira Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.work-section p {
+  color: #ddd;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+}
+
+.work-section strong {
+  font-weight: 600;
+}
+
+.work-project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-project-list > li {
+  margin-bottom: 1.75rem;
+}
+
+.work-project-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.work-project-list p:last-child {
+  margin-bottom: 0;
+}
+
+.work-section .work-role {
+  font-family: 'Fira Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.work-section .work-course {
+  font-family: 'Fira Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.15rem;
+}
+
+.work-section .work-institution {
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 0.1rem;
+  font-style: normal;
+}
+
+.work-education .work-institution:last-child {
+  margin-bottom: 0;
+}
+
+.work-pointers {
+  list-style: disc;
+  margin: 0.5rem 0 0 1.25rem;
+  padding: 0;
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.work-pointers li,
+.work-pointers li::marker {
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ddd;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.work-pointers li {
+  margin-bottom: 0.5rem;
+}
+
+.work-pointers li:last-child {
+  margin-bottom: 0;
+}
+
+.work-meta {
+  color: #999;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.work-cv-links {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.work-education {
+  margin-bottom: 0;
 }
 
 .about-image {
@@ -408,10 +522,10 @@ h4 {
 }
 
 p {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 1rem;
   color: #fff;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 ul {
@@ -420,6 +534,7 @@ ul {
 }
 
 ul li {
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0.75rem;
   line-height: 1.7;
 }

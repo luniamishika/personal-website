@@ -5,6 +5,8 @@
     { src: 'https://kcdha.ashoka.edu.in/src/images/news-default.png', alt: 'Koita Centre for Digital Health at Ashoka' }
   ];
 
+  if (!logosSection) return;
+
   companyLogos.forEach(({ src, alt }) => {
     const logoItem = document.createElement('div');
     logoItem.className = 'logo-item';
