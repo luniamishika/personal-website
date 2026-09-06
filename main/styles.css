@@ -141,13 +141,10 @@ body {
   padding: 4rem 0;
 }
 
-.hero-section {
-  max-width: 700px;
-}
-
-/* About page */
-.about-section {
-  max-width: 700px;
+.hero-section,
+.about-section,
+.work-page {
+  max-width: 100%;
 }
 
 .about-heading {
@@ -177,7 +174,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .about-profile {
@@ -214,7 +211,7 @@ body {
 }
 
 .about-content p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: #fff;
   line-height: 1.8;
@@ -250,34 +247,30 @@ body {
   text-decoration: underline;
 }
 
-.work-intro {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 2.5rem;
-  font-weight: 400;
-}
-
 .work-heading,
 .hobbies-heading {
   display: block;
   text-align: center;
 }
 
-.work-page {
-  max-width: 720px;
-}
-
 .work-section {
   margin-bottom: 3rem;
 }
 
+.work-section:last-child {
+  margin-bottom: 0;
+}
+
 .work-section-title {
-  font-family: 'Fira Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: 'Technor-Variable', sans-serif;
   font-size: 1.45rem;
-  font-weight: 600;
+  font-weight: 450;
+  font-variation-settings: 'wght' 450;
   letter-spacing: -0.01em;
   margin: 0 0 1rem;
   text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .work-section p {
@@ -285,6 +278,12 @@ body {
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.7;
+  margin-bottom: 1.1rem;
+}
+
+.work-section .work-intro {
+  font-size: 0.9rem;
+  color: #ccc;
   margin-bottom: 1.1rem;
 }
 
@@ -373,6 +372,30 @@ body {
 }
 
 .work-education {
+  margin-bottom: 0;
+}
+
+.work-interests {
+  list-style: disc;
+  margin: 0.35rem 0 0 1.25rem;
+  padding: 0;
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.work-interests li,
+.work-interests li::marker {
+  font-family: 'Open Sans', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ddd;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.work-interests li {
+  margin-bottom: 0.5rem;
+}
+
+.work-interests li:last-child {
   margin-bottom: 0;
 }
 
@@ -1222,11 +1245,11 @@ a:hover {
   }
 
   .about-content {
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
   .about-content p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .gallery-grid {
